@@ -1,0 +1,16 @@
+﻿api.example.com {
+	handle_path /ddns/update {
+		basicauth {
+			user pass
+		}
+		reverse_proxy * http://localhost:16000 {
+			header_down Access-Control-Allow-Origin *
+		}
+	}
+
+	handle_path /ip {
+		header Content-Type text/plain
+		respond "{{.RemoteIP}}"
+		templates
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DDNS-Server": {
+      "commandName": "Project",
+      "commandLineArgs": "-p 9000 -l 1.log"
+    }
+  }
+}

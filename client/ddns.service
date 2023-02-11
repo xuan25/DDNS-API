@@ -1,0 +1,11 @@
+[Unit]
+Description=DDNS Service
+After=network.target nss-lookup.target
+
+[Service]
+User=root
+ExecStart=/usr/local/lib/ddns/.env/bin/python /usr/local/lib/ddns/main.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
