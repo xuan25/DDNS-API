@@ -17,7 +17,7 @@ A self-hosted Dynamic DNS solution based on *Bind 9*, including server and clien
   - providing TLS and HTTP authorization
 - *Python 3* (on client)
   - providing client runtime
-- Email account with IMAP support
+- Email account with SMTP support
   - for Email notification
 
 ## Setup
