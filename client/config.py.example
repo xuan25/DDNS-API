@@ -1,0 +1,13 @@
+import email.utils
+import email_config
+
+EMAIL_CONFIG = email_config.EmailConfig(
+    'mail.example.com',
+    465,
+    'mail-user',
+    'mail-pass',
+    email.utils.formataddr(('real-name', 'mail-user@example.com'), charset='utf-8'),
+    'mail-user@example.com',
+    'DDNS {domain} automatic notification',
+    'IP address updated.\nDomain: {domain}\nIP: {ip}\n'
+)
