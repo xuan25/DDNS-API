@@ -1,5 +1,8 @@
 # DDNS-API
 
+> [!WARNING]
+> I have a more stratforward approach here. Checkout [DDNS-Updater-RFC2136](https://github.com/xuan25/DDNS-Updater-RFC2136) to see if that works for you.
+
 A self-hosted Dynamic DNS solution based on *Bind 9*, including server and client implementations.
 
 ## Features
